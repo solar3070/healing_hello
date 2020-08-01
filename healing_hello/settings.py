@@ -119,6 +119,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+<<<<<<< HEAD
+
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR,'healing_hello', 'static')
+]
+
+STATIC_ROOT=os.path.join(BASE_DIR,'static')
+=======
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'theapp', 'static')
 ]
@@ -128,3 +136,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/' 
+>>>>>>> 8e8e4d2a1cc93c8ae8e18fe93725730511b514fa
