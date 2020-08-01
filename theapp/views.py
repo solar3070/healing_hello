@@ -15,3 +15,9 @@ def test3(requests):
 def detail(request, image_id):
     details = get_object_or_404(Place, pk = image_id)
     return render(request, 'detail.html', {'detail':details})
+
+def main(request):
+    return render(request, 'main.html')
+
+def main2(request):
+    return render(request, '2번째.html')

@@ -11,16 +11,13 @@
         <!-- navbar에 적용한 css -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/sketchy/bootstrap.min.css" integrity="sha384-NkI/Nlr1DZ5rUXWWdnuZb97FQRgCCcwC66DC+HUCY0oVx6BgBHUfPcwL1vwp93JZ" crossorigin="anonymous">
         <!-- 한국어 font 적용에 필요한 css-->
-<<<<<<< HEAD
-        <link rel="stylesheet" href="{% static 'font/ko_font.css'%}"
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'font/ko_font.css'%}">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
 
        
-=======
         <link rel="stylesheet" href="{% static 'font/ko_font.css'%}">
         <!-- footer 관련 css-->
         <link rel="stylesheet" href="{% static 'css/footer.css'%}">
->>>>>>> 8e8e4d2a1cc93c8ae8e18fe93725730511b514fa
 
         {% block head %}
         {% endblock head %}
@@ -29,39 +26,36 @@
 <body>
   <div id="Wrapper">
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success" style="border:0; outline:0">
-        <a class="navbar-brand" href="#">HH</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarColor01">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success text-white">
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'img/our_logo.png'%}" alt="healing-hello-logo" height='50'>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
     </nav>
     <!-- navbar end -->
-
-    <!-- Content Wrapper start-->
-    <br>
-    <div class="container" style="text-align:center;">
-        <img src="{% static 'font/프레젠테이션6.png' %}" alt="힐링" style="width:100%;">
-    </div>
 
     {% block content %}
     {% endblock content %}
