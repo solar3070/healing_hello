@@ -1,0 +1,22 @@
+img {
+    position: relative;
+}
+
+#start {
+    font-size: 30px;
+    padding:4px 8px 4px 8px;
+    border-radius: 10px;
+    position: absolute;
+    left: 60%;
+    top: 59%;
+}
+
+#start:link, #start:visited {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(40, 167, 69, 1);
+}
+
+#start:hover {
+    color: black;
+}

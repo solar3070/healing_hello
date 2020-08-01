@@ -5,19 +5,13 @@ def test2(requests):
     return render(requests, 'test2.html')
 
 def list(request):
-    return render(request, 'list.html')
-
+    places = Place.objects
+    return render(request, 'list.html', {'places':places})
+    
 def test3(requests):
     places = Place.objects
     return render(requests, 'test3.html', {'places':places})
 
-<<<<<<< HEAD
-=======
-# def detail(request, image_id):
-#     details = get_object_or_404(Place, pk = image_id)
-#     return render(request, 'detail.html', {'detail':details})
-
->>>>>>> d1a4047177e69b3395f0aa477f3d434370b3a72c
 def main(request):
     return render(request, 'main.html')
 
@@ -29,3 +23,4 @@ def detail(request):
 
 def about(request):
     return render(request, 'about.html')
+
