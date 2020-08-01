@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="text-center">
+    <div class="container">
+        <div class="row pt-4">
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">healinghello</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1><b>Neighbor Map</b><small class="text-muted"></small></h1>
+                        
+                        <a><img src="{% static 'font/화살표.png' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">healinghello</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1><b>My<br>Map</b><small class="text-muted"></small></h1>
+                        
+                        <a><img src="{% static 'font/화살표.png' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">healinghello</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1><b>Best Place</b><small class="text-muted"></small></h1>
+                        
+                        <a><img src="{% static 'font/화살표.png' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
