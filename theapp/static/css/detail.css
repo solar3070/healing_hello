@@ -2,7 +2,7 @@
 @font-face { font-family: 'LAB디지털'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 body {
-    background: url(../노끈.png);
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -20px;

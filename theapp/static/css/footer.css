@@ -7,7 +7,16 @@ html,body{
     min-height: 100%;
 }
 
+#header{
+    height: 90px;
+}
+
+#contnet{
+    height:auto !important;
+}
+
 .base-footer{
     position: absolute;
     bottom:0;
+    height: 70px;
 }
