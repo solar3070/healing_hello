@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Place
+from .forms import Post
 
 def test2(requests):
     return render(requests, 'test2.html')
@@ -12,13 +13,10 @@ def test3(requests):
     places = Place.objects
     return render(requests, 'test3.html', {'places':places})
 
-<<<<<<< HEAD
 def detail2(request, image_id):
     details = get_object_or_404(Place, pk = image_id)
     return render(request, 'detail.html', {'detail':details})
   
-=======
->>>>>>> f0f284358e774fd1fbc6105ce2679e617de6a311
 def main(request):
     return render(request, 'main.html')
 
@@ -30,4 +28,15 @@ def detail(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def create(request):
+    if request.method == 'POST': 
+        form = Post(request.POST, request.FILES)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.save() 
+            return redirect('main')
+    else:
+        form = Post()
+        return render(request, 'write.html', {'form':form})
 
