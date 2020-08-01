@@ -1,16 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<!-- navbar에 적용한 css -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/sketchy/bootstrap.min.css" integrity="sha384-NkI/Nlr1DZ5rUXWWdnuZb97FQRgCCcwC66DC+HUCY0oVx6BgBHUfPcwL1vwp93JZ" crossorigin="anonymous">
-<!-- 한국어 font 적용에 필요한 css-->
-<link rel="stylesheet" href="{% static 'font/ko_font.css'%}"
-<link rel="stylesheet" href="{% static 'css/style.css' %}">
-<!-- 여기다가 css 파일이나 link 파일 넣어주세요!-->
-{% block head %}
-{% endblock head %}
 
-<!-- content가 시작되는 영역 입니다!-->
+{% block content %}
 <div class="text-center">
     <div class="container">
         <div class="row pt-4">
@@ -22,7 +13,7 @@
                     <div class="card-body">
                         <h1><b>Neighbor Map</b><small class="text-muted"></small></h1>
                         
-                        <a img src="font/화살표.png" href=""></a>
+                        <a><img src="{% static 'font/화살표.png' %}" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -32,9 +23,9 @@
                         <h4 class="my-0 font-weight-normal">healinghello</h4>
                     </div>
                     <div class="card-body">
-                        <h1><b>My Map </b><small class="text-muted"></small></h1>
+                        <h1><b>My<br>Map</b><small class="text-muted"></small></h1>
                         
-                        <a img src="font/화살표.png" href=""></a>
+                        <a><img src="{% static 'font/화살표.png' %}" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -46,16 +37,12 @@
                     <div class="card-body">
                         <h1><b>Best Place</b><small class="text-muted"></small></h1>
                         
-                        <a img src="font/화살표.png" href=""></a>
+                        <a><img src="{% static 'font/화살표.png' %}" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-{% block content %}
-<p id="ko">폰트 참고 해주세요! 한국어는 원하시는 폰트 있으시면 바꿔드릴께욤</p>
-<p>ENAGLISH</p>
-<p class="lead">ENAGLISH</p>
-<h5>ENAGLISH</h5>
+
 {% endblock content %}
