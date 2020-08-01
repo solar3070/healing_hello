@@ -1,0 +1,45 @@
+@font-face { font-family: 'InkLipquid'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'LAB디지털'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body {
+    background: url(../노끈.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -20px;
+    background-position-x: -20px;
+}
+
+.box {
+    background-color: white;
+    width: 400px;
+    height: 440px;
+    border: 0.1px solid black;
+    text-align: center;
+    margin-left: 275px;
+    justify-content: center;
+    margin-top: 93px;
+    padding-top: 10px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+h4 {
+    padding-left: 30px;
+    text-align: left;
+    font-family: 'InkLipquid';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#body {
+    font-family: 'InkLipquid';
+    font-size: 25px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+#date {
+    font-family: 'LAB디지털';
+    color: rgba(235, 113, 0, 0.795);
+    padding-left: 30px;
+    text-align: left;
+}
