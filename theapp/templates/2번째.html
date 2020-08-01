@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block head %}
+<link href="{% static 'css/main2.css' %}" type="text/css" rel="stylesheet">
+{% endblock head %}
+
 {% block content %}
 <div class="text-center">
     <div class="container">
@@ -12,7 +16,7 @@
                     </div>
                     <div class="card-body">
                         <h1><b>Neighbor Map</b><small class="text-muted"></small></h1>
-                        
+                        <img src="{% static 'neighbor map.png' %}" style="width: 200px; height: 200px;">
                         <a><img src="{% static 'font/화살표.png' %}" alt=""></a>
                     </div>
                 </div>
@@ -23,9 +27,9 @@
                         <h4 class="my-0 font-weight-normal">healinghello</h4>
                     </div>
                     <div class="card-body">
-                        <h1><b>My<br>Map</b><small class="text-muted"></small></h1>
-                        
-                        <a><img src="{% static 'font/화살표.png' %}" alt=""></a>
+                        <h1><b>My Map</b><small class="text-muted"></small></h1>
+                        <img src="{% static 'mymap.png' %}" style="width: 200px; height: 200px;">
+                        <a id="start" href="{% url 'list' %}"><img class="arrow" src="{% static 'font/화살표.png' %}" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -36,7 +40,7 @@
                     </div>
                     <div class="card-body">
                         <h1><b>Best Place</b><small class="text-muted"></small></h1>
-                        
+                        <img src="{% static 'best place.png' %}" style="width: 200px; height: 200px;">
                         <a><img src="{% static 'font/화살표.png' %}" alt=""></a>
                     </div>
                 </div>
