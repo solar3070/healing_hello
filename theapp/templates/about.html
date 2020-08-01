@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<head>
+    <style>
+        table{
+            margin-left: auto; 
+            margin-right: auto;
+            text-align: center; 
+            vertical-align: middle;
+        }
+        td{
+            border: 3px solid green;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <table>
+        <tr>
+            <th><img src="{% static 'img/green_logo.png'%}" width="30%"></th>
+        </tr>
+        <tr style="height: 300px;">
+            <td>
+            안녕하세요. 저희는 <bold>'힐링을 찾아조'</bold>입니다.<br>
+            저희는 걷거나 자전거를 타며 만나는 장소에서 힐링하며,<br>
+            그때의 느낌을 기록할 수 있는 플랫폼인 <bold>'힐링헬로 (Healing Hello)'</bold>를 구현했습니다.<br>
+            코로나 블루, 우울감으로부터 벗어나 힐링을 찾아주는 나만의 힐링 장소를 남겨보세요
+            </td>
+        </tr>
+
+    </table>
+</body>
+{% endblock content %}
