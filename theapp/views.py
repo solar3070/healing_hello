@@ -5,8 +5,9 @@ def test2(requests):
     return render(requests, 'test2.html')
 
 def list(request):
-    return render(request, 'list.html')
-
+    places = Place.objects
+    return render(request, 'list.html', {'places':places})
+    
 def test3(requests):
     places = Place.objects
     return render(requests, 'test3.html', {'places':places})

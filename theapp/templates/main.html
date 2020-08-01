@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block head %}
+<link href="{% static 'css/main.css' %}" type="text/css" rel="stylesheet">
+{% endblock head %}
+
 {% block content %}
   <div class="row" style="text-align:center;">
     <div class="col-lg-12">
     <img src="{% static 'font/프레젠테이션6.png' %}" alt="힐링">
+    <a id="start" href="{% url 'main2' %}">Start</a>
     </div>
   </div>
 
