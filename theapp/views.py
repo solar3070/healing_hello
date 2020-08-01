@@ -12,9 +12,9 @@ def test3(requests):
     places = Place.objects
     return render(requests, 'test3.html', {'places':places})
 
-def detail2(request, image_id):
-    details = get_object_or_404(Place, pk = image_id)
-    return render(request, 'detail.html', {'detail':details})
+# def detail(request, image_id):
+#     details = get_object_or_404(Place, pk = image_id)
+#     return render(request, 'detail.html', {'detail':details})
 
 def main(request):
     return render(request, 'main.html')
