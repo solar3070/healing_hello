@@ -1,0 +1,13 @@
+html,body{
+    height:100%
+}
+
+#Wrapper{
+    position: relative;
+    min-height: 100%;
+}
+
+.base-footer{
+    position: absolute;
+    bottom:0;
+}
