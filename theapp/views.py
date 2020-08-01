@@ -12,13 +12,10 @@ def test3(requests):
     places = Place.objects
     return render(requests, 'test3.html', {'places':places})
 
-<<<<<<< HEAD
 def detail2(request, image_id):
     details = get_object_or_404(Place, pk = image_id)
     return render(request, 'detail.html', {'detail':details})
   
-=======
->>>>>>> f0f284358e774fd1fbc6105ce2679e617de6a311
 def main(request):
     return render(request, 'main.html')
 
