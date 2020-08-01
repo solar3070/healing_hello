@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Place
+from .forms import Post
 
 def test2(requests):
     return render(requests, 'test2.html')
@@ -27,4 +28,15 @@ def detail(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def create(request):
+    if request.method == 'POST': 
+        form = Post(request.POST, request.FILES)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.save() 
+            return redirect('main')
+    else:
+        form = Post()
+        return render(request, 'write.html', {'form':form})
 
