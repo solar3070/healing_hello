@@ -4,6 +4,9 @@ from .models import Place
 def test2(requests):
     return render(requests, 'test2.html')
 
+def list(request):
+    return render(request, 'list.html')
+    
 def test3(requests):
     places = Place.objects
     return render(requests, 'test3.html', {'places':places})
