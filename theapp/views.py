@@ -17,3 +17,6 @@ def detail(request, image_id):
 
 def main(request):
     return render(request, 'main.html')
+
+def main2(request):
+    return render(request, '2번째.html')
